@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<style>
+    *{  
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        background-color: azure;
+        height: 900px;
+        line-height: 40px;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color: crimson;
+    }
+    h3{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+    }
+    h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+    }
+    button{
+        padding: 10px 10px;
+        background-color: bisque;
+        border: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 13px;
+        border-radius: 20px 20px 20px 20px;
+        cursor: pointer;
+        
+    }
+</style>
+<body>
+    <div class="main">
+    <h1> <i> BIODATA </i> </h1>
+    </br>
+    <button onclick='document.getElementById("bio").src="./Images/adult.jpg"'>Change Pic into Adult</button>
+    <img id="bio" src="./Images/childhood.jpg" width="200px" height="200px">
+    <button onclick='document.getElementById("bio").src="./Images/childhood.jpg"'>Change Pic into Childhood</button>
+    </br>
+    </br>
+    
+        <h3 class="name"></h3>
+        <h3 class="father"></h3>
+        <h3 class="mob"></h3>
+        <h3 class="id"></h3>
+        <h3 class="gen"></h3>
+        <h3 class="dob"></h3>
+        <h3 class="age">0</h3>
+        <h3 class="mari"></h3>
+        <h3 class="rel"></h3>
+        <h3 class="nat"></h3>
+        <h3 class="known"></h3>
+</br>
+    <h5></h5>
+</div>
+
+</body>
+<script>
+    document.querySelector(".name").innerHTML="Name : Bhavisha Gandharva"
+    document.querySelector(".father").innerHTML="Father's Name : Amit Gandharva"
+    document.querySelector(".mob").innerHTML="Mobile No. : 8200913637"
+    document.querySelector(".id").innerHTML="Email Id : bhavishagandharva@gmail.com"
+    document.querySelector(".gen").innerHTML="Gender : Female"
+    document.querySelector(".dob").innerHTML="DOB :26/12/2000"
+    document.querySelector(".age").innerHTML="AGE :23"
+    document.querySelector(".mari").innerHTML="Marital Status : Unmarried"
+    document.querySelector(".rel").innerHTML="Religion : Hindu(Brahmin)"
+    document.querySelector(".nat").innerHTML="Nationality : Indian"
+    document.querySelector(".known").innerHTML="Languages Known : Hindi, English, Malayalam, Gujarati"
+    
+    document.querySelector("h5").innerHTML="Signature :"
+   
+
+    
+    
+</script>
+</html>
